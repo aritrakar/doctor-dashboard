@@ -1,6 +1,6 @@
 {
   "name": "doctor_dashboard",
-  "homepage": "https://aritrakar.github.io/doctor-dashboard/",
+  "homepage": "http://docdash.netlify.app/doctor-dashboard/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
