@@ -49,10 +49,22 @@ export default class PatProfile extends React.Component {
   }
 
   updateRecord() {
-    firebase.firestore().collection("Patients").doc(this.state.email).update({
-      bio: this.state.bio,
-      name: this.state.name,
-    });
+    if (this.state.bio.length > 0 && this.state.name.length > 0) {
+      firebase
+        .firestore()
+        .collection("Patients")
+        .doc(this.state.email)
+        .update({
+          bio: this.state.bio,
+          name: this.state.name,
+        })
+        .then(() => alert("Updated."))
+        .catch((err) => {
+          alert(err);
+        });
+    } else {
+      alert("Invalid inputs.");
+    }
   }
 
   render() {
