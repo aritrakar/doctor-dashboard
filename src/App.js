@@ -28,7 +28,7 @@ export default function App() {
     <BrowserRouter>
       <div className="App">
         <Switch>
-          <Route exact path="/doctor-dashboard" component={LandingPage} />
+          <Route exact path="/" component={LandingPage} />
           <Route path="/doctor-dashboard/login" component={Login} />
           <Route path="/doctor-dashboard/docsignup" component={DocSignUp} />
           <Route path="/doctor-dashboard/patsignup" component={PatSignUp} />
