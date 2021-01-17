@@ -1,0 +1,22 @@
+#dashboard {
+  height: 100vh;
+  background-color: lightblue;
+}
+
+#searchBox {
+  margin: 20px;
+  margin-bottom: 30px;
+
+  padding: 5px;
+}
+
+#searchBox:hover {
+  border-radius: 30px;
+  background-color: white;
+  color: white;
+}
+
+.MuiButton-root {
+  background-color: chartreuse;
+  font-size: 50px;
+}

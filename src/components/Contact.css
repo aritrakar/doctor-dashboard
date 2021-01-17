@@ -1,0 +1,23 @@
+#dashboard-contact {
+  overflow: hidden;
+}
+
+#dashboard-contact > h1 {
+  font-size: 90px;
+  margin-bottom: 50px;
+}
+
+#dashBody-contact {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+#svg {
+  padding: 20px;
+}
+
+#content-contact > h1 {
+  font-size: 80px;
+}

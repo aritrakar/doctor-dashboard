@@ -1,0 +1,60 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+#form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+#form-body {
+  padding: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form-body > button {
+  margin-top: 30px;
+}
+
+#submit-button {
+  font-size: 25px;
+  background: #52defd;
+  border-radius: 50px;
+  margin: 0 20px;
+  max-width: 120px;
+}
+
+button:hover {
+  transform: scale(1.05);
+  transition: transform 0.1s ease;
+  background-color: #8aeaff;
+}
+
+#form > img {
+  width: 50%;
+  height: 50%;
+  padding: 30px;
+}
+
+/*
+.formdiv:hover {
+  transform: scale(1.03);
+  transition-duration: 1s;
+}*/
+
+.formdiv {
+  width: 50%;
+}
+
+.signupdiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

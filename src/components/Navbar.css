@@ -1,0 +1,139 @@
+#navbar {
+  position: relative;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar > img {
+  margin-right: 200px;
+}
+
+#navbar > p {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  margin: 0px 30px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+#navbar > p:hover {
+  background: #adeffd;
+  padding: 15px;
+  border-radius: 30px;
+}
+
+.contentholder {
+  background: #00b4db;
+  color: var(--white);
+  border-radius: var(--border-radius4);
+  border: 1px solid var(--greenblue);
+  text-decoration: none;
+  padding: 15px 20px;
+  transition: all 0.3s;
+  font-size: 18px;
+}
+
+.buttontest {
+  padding: 2em 0em;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 240px;
+}
+
+.btn {
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 45px;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+/*btn_background*/
+.effect01 {
+  color: #fff;
+  background-color: #00b4db;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.disabled {
+  color: #fff;
+  background-color: grey;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.effect01:hover {
+  background-color: #52defd;
+}
+
+/*btn_text*/
+.effect01 span {
+  transition: all 0.2s ease-out;
+  z-index: 2;
+}
+
+.example_e {
+  border: none;
+  background: #1aa8cc;
+  color: #ffffff;
+  font-weight: 100;
+  padding: 20px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+}
+
+.example_e:hover {
+  color: #404040;
+  font-weight: 700;
+  letter-spacing: 3px;
+  background: none;
+  box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.3s ease 0s;
+}
+.effect01:hover span {
+  letter-spacing: 0.13em;
+}
+
+/*highlight*/
+.effect01:after {
+  background: #5cdbf8;
+  height: 155px;
+  left: -75px;
+  opacity: 0.8;
+  position: absolute;
+  top: -50px;
+  transform: rotate(35deg);
+  width: 50px;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1); /*easeOutCirc*/
+  z-index: 1;
+}
+.effect01:hover:after {
+  background: #5cdbf8;
+  opacity: 0;
+  left: 120%;
+  transform: rotate(40deg);
+}

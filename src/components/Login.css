@@ -1,0 +1,40 @@
+* {
+  text-align: center;
+  color: #04436d;
+}
+
+a,
+a:active {
+  text-decoration: none;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #0ec44a);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+#buttons > a {
+  padding: 20px;
+  margin: 20px 10px;
+  font-size: 25px;
+}
+
+#buttons {
+  display: flex;
+  border: none;
+  outline: none;
+}
+
+#buttons > *:hover {
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+}

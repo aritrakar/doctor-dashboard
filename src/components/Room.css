@@ -1,0 +1,13 @@
+#video-div {
+  margin: 0;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#content {
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+}
