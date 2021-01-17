@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/doctor-dashboard/static/css/main.0761fb21.chunk.css",
-    "main.js": "/doctor-dashboard/static/js/main.1d90b388.chunk.js",
-    "main.js.map": "/doctor-dashboard/static/js/main.1d90b388.chunk.js.map",
+    "main.js": "/doctor-dashboard/static/js/main.f711651c.chunk.js",
+    "main.js.map": "/doctor-dashboard/static/js/main.f711651c.chunk.js.map",
     "runtime-main.js": "/doctor-dashboard/static/js/runtime-main.0e043095.js",
     "runtime-main.js.map": "/doctor-dashboard/static/js/runtime-main.0e043095.js.map",
-    "static/js/2.e9266c6c.chunk.js": "/doctor-dashboard/static/js/2.e9266c6c.chunk.js",
-    "static/js/2.e9266c6c.chunk.js.map": "/doctor-dashboard/static/js/2.e9266c6c.chunk.js.map",
+    "static/js/2.7273a78e.chunk.js": "/doctor-dashboard/static/js/2.7273a78e.chunk.js",
+    "static/js/2.7273a78e.chunk.js.map": "/doctor-dashboard/static/js/2.7273a78e.chunk.js.map",
     "index.html": "/doctor-dashboard/index.html",
     "static/css/main.0761fb21.chunk.css.map": "/doctor-dashboard/static/css/main.0761fb21.chunk.css.map",
-    "static/js/2.e9266c6c.chunk.js.LICENSE.txt": "/doctor-dashboard/static/js/2.e9266c6c.chunk.js.LICENSE.txt",
+    "static/js/2.7273a78e.chunk.js.LICENSE.txt": "/doctor-dashboard/static/js/2.7273a78e.chunk.js.LICENSE.txt",
     "static/media/features.cd676da7.svg": "/doctor-dashboard/static/media/features.cd676da7.svg",
     "static/media/logo.be444bd3.png": "/doctor-dashboard/static/media/logo.be444bd3.png",
     "static/media/support.b83194df.svg": "/doctor-dashboard/static/media/support.b83194df.svg",
@@ -21,8 +21,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.0e043095.js",
-    "static/js/2.e9266c6c.chunk.js",
+    "static/js/2.7273a78e.chunk.js",
     "static/css/main.0761fb21.chunk.css",
-    "static/js/main.1d90b388.chunk.js"
+    "static/js/main.f711651c.chunk.js"
   ]
 }
