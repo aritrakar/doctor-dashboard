@@ -60,7 +60,7 @@ function Sidebar(props) {
             .auth()
             .signOut()
             .then(() => {
-              this.props.history.push("/docdash/login");
+              this.props.history.push("/doctor-dashboard/login");
             });
         }}
         className="button_cont"

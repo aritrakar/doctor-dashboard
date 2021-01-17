@@ -33,7 +33,7 @@ export default class Login extends React.Component {
               console.log("Doctor document data: ", doc.data());
               console.log("userID: ", doc.data().userID);
               console.log("FOUND DOCTOR");
-              this.props.history.push(`/docdash/docdashboard`);
+              this.props.history.push(`/doctor-dashboard/docdashboard`);
             } else {
               firebase
                 .firestore()
@@ -43,7 +43,7 @@ export default class Login extends React.Component {
                 .then((doc) => {
                   console.log("Patient document data: ", doc.data());
                   console.log("FOUND PATIENT");
-                  this.props.history.push(`/docdash/patdashboard`);
+                  this.props.history.push(`/doctor-dashboard/patdashboard`);
                 });
             }
           });

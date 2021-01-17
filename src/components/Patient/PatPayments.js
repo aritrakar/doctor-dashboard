@@ -35,7 +35,7 @@ class PatPayments extends React.Component {
           });
       } else {
         alert("Please sign in to continue.");
-        this.props.history.push("/docdash/login");
+        this.props.history.push("/doctor-dashboard/login");
       }
     });
   }

@@ -12,26 +12,26 @@ class Navbar extends React.Component {
           src={logo2}
           alt="logo"
           onClick={() => {
-            this.props.history.push("/docdash");
+            this.props.history.push("/doctor-dashboard");
           }}
         />
         <p
           onClick={() => {
-            this.props.history.push("/docdash/about");
+            this.props.history.push("/doctor-dashboard/about");
           }}
         >
           About
         </p>
         <p
           onClick={() => {
-            this.props.history.push("/docdash/contact");
+            this.props.history.push("/doctor-dashboard/contact");
           }}
         >
           Contact
         </p>
         <p
           onClick={() => {
-            this.props.history.push("/docdash/login");
+            this.props.history.push("/doctor-dashboard/login");
           }}
         >
           Login
@@ -40,7 +40,7 @@ class Navbar extends React.Component {
           <div className="container">
             <button
               onClick={() => {
-                this.props.history.push("/docdash/docsignup");
+                this.props.history.push("/doctor-dashboard/docsignup");
               }}
               className="btn effect01"
             >
@@ -52,7 +52,7 @@ class Navbar extends React.Component {
           <div className="container">
             <button
               onClick={() => {
-                this.props.history.push("/docdash/patsignup");
+                this.props.history.push("/doctor-dashboard/patsignup");
               }}
               className="btn effect01"
             >

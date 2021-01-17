@@ -4,8 +4,6 @@ import svg from "../images/undraw_team_spirit_hrr4.svg";
 import features from "../images/features.svg";
 import Navbar from "./Navbar";
 import { withRouter } from "react-router-dom";
-import { TextField } from "@material-ui/core";
-import Button from "@material-ui/core/Button";
 
 class About extends React.Component {
   render() {

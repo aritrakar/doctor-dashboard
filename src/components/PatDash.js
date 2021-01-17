@@ -5,7 +5,6 @@ import Sidebar from "./Sidebar";
 import PatRow from "./Patient/PatRow.js";
 import { withRouter } from "react-router-dom";
 import { TextField } from "@material-ui/core";
-import AddCircleIcon from "@material-ui/icons/AddCircle";
 import Button from "@material-ui/core/Button";
 import Modal from "react-modal";
 import SearchIcon from "@material-ui/icons/Search";
@@ -13,9 +12,6 @@ import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
-import CardMedia from "@material-ui/core/CardMedia";
-import Avatar from "@material-ui/core/Avatar";
-import Typography from "@material-ui/core/Typography";
 import animationData from "../images/lottie1";
 import Lottie from "react-lottie";
 
@@ -113,7 +109,7 @@ class PatDash extends React.Component {
           });
       } else {
         alert("Please sign in to continue.");
-        this.props.history.push("/docdash/login");
+        this.props.history.push("/doctor-dashboard/login");
       }
     });
   }

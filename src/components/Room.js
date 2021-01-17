@@ -74,7 +74,7 @@ export default class Room extends React.Component {
           });
       } else {
         alert("Please login to continue.");
-        this.props.history.push("/docdash/login");
+        this.props.history.push("/doctor-dashboard/login");
       }
     });
   }
@@ -169,7 +169,7 @@ export default class Room extends React.Component {
                 }}
               >
                 {`Dr.${this.props.match.params.docName}\nTime: ${
-                  new Date().toString().split("GMT")[0]
+                  new Date().toString() //.split("GMT")[0]
                 }\nName: ${patientObject?.name}`}
               </textarea>
               <div

@@ -22,7 +22,7 @@ class Support extends React.Component {
         return true;
       } else {
         alert("Please login to continue.");
-        this.props.history.push("/docdash/login");
+        this.props.history.push("/doctor-dashboard/login");
       }
     });
   }

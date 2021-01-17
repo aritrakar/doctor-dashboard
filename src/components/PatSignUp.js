@@ -63,7 +63,7 @@ class PatSignUp extends React.Component {
         .auth()
         .createUserWithEmailAndPassword(email, password)
         .then(() => {
-          this.props.history.push("/docdash/patdashboard");
+          this.props.history.push("/doctor-dashboard/patdashboard");
         })
         .catch((err) => {
           alert(err);

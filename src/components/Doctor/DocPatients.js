@@ -40,7 +40,7 @@ class DocPatients extends React.Component {
           .catch((err) => {
             console.log("err: ", err);
             alert("Please sign in to continue.");
-            this.props.history.push("/docdash/docsignup");
+            this.props.history.push("/doctor-dashboard/docsignup");
             this.setState({ errorTrue: true });
           });
         console.log("IN BETWEEN");
@@ -73,7 +73,7 @@ class DocPatients extends React.Component {
           });
       } else {
         alert("Please sign in to continue.");
-        this.props.history.push("/docdash/docsignup");
+        this.props.history.push("/doctor-dashboard/docsignup");
       }
     });
   }

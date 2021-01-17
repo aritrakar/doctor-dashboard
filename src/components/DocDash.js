@@ -42,7 +42,7 @@ class DocDash extends React.Component {
           .catch((err) => {
             console.log("err: ", err);
             alert("Please sign in to continue.");
-            this.props.history.push("/docdash/docsignup");
+            this.props.history.push("/doctor-dashboard/docsignup");
             this.setState({ errorTrue: true });
           });
 
@@ -121,7 +121,7 @@ class DocDash extends React.Component {
           });
       } else {
         alert("Please sign in to continue.");
-        this.props.history.push("/docdash/login");
+        this.props.history.push("/doctor-dashboard/login");
       }
     });
   }
@@ -129,7 +129,7 @@ class DocDash extends React.Component {
   createRoom = (param) => {
     var code = uuidv4();
     var obj = {
-      pathname: `/docdash/join/${code}/${this.state.doctorObject?.name}/${param}`,
+      pathname: `/doctor-dashboard/join/${code}/${this.state.doctorObject?.name}/${param}`,
     };
     this.props.history.push(obj);
   };

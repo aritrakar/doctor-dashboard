@@ -7,7 +7,6 @@ import firebase from "../firebase";
 import { v4 as uuidv4 } from "uuid";
 import { withRouter } from "react-router-dom";
 import InputLabel from "@material-ui/core/InputLabel";
-import FormHelperText from "@material-ui/core/FormHelperText";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import specialityData from "./SpecialityData.js";
@@ -69,7 +68,7 @@ class DocSignUp extends React.Component {
         .auth()
         .createUserWithEmailAndPassword(email, password)
         .then(() => {
-          this.props.history.push("/docdash/docdashboard");
+          this.props.history.push("/doctor-dashboard/docdashboard");
         })
         .catch((err) => {
           alert(err);

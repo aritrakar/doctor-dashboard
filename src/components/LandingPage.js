@@ -79,7 +79,7 @@ export default class LandingPage extends React.Component {
             >
               <a
                 className="example_e"
-                href="/docdash/docsignup"
+                href="/doctor-dashboard/docsignup"
                 target="_blank"
                 rel="nofollow noopener"
               >

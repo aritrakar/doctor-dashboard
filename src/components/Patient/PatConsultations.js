@@ -40,7 +40,7 @@ class PatConsultations extends React.Component {
         this.setState({ loaded: true });
       } else {
         alert("Please sign in to continue.");
-        this.props.history.push("/docdash/login");
+        this.props.history.push("/doctor-dashboard/login");
       }
     });
   }

@@ -30,7 +30,7 @@ export default class PatProfile extends React.Component {
           .then((doc) => {
             if (!doc.exists) {
               alert("Error.");
-              this.props.history.push("/docdash/login");
+              this.props.history.push("/doctor-dashboard/login");
             } else {
               this.setState({
                 email: cred.email,
@@ -43,7 +43,7 @@ export default class PatProfile extends React.Component {
           });
       } else {
         alert("Please sign in to continue");
-        this.props.history.push("/docdash/login");
+        this.props.history.push("/doctor-dashboard/login");
       }
     });
   }
