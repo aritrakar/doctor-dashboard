@@ -20,7 +20,7 @@ import {
   DocProfile,
   PatProfile,
 } from "./components";
-import startled from "./images/startled.svg";
+//import startled from "./images/startled.svg";
 import animationData from "./images/error-cat.json";
 import Lottie from "react-lottie";
 

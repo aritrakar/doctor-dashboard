@@ -97,7 +97,7 @@ export default class Room extends React.Component {
       .storage()
       .ref(
         `${this.state.patientEmail}/${this.props.match.params.docName}_${
-          new Date().toString().split("GMT")[0]
+          new Date().toString() //.split("GMT")[0]
         }`
       )
       .put(file);

@@ -47,6 +47,14 @@ export default class PatProfile extends React.Component {
       }
     });
   }
+
+  updateRecord() {
+    firebase.firestore().collection("Patients").doc(this.state.email).update({
+      bio: this.state.bio,
+      name: this.state.name,
+    });
+  }
+
   render() {
     const defaultOptions = {
       loop: true,
@@ -80,9 +88,21 @@ export default class PatProfile extends React.Component {
               style={{ width: "100%", marginBottom: "8%" }}
               placeholder={patientObject?.email}
               id="standard-read-only-input"
-              variant="standard"
+              variant="outlined"
               InputProps={{
                 readOnly: true,
+              }}
+            />
+            <br />
+            <h2>Name:</h2>
+
+            <TextField
+              style={{ width: "100%", marginBottom: "8%" }}
+              placeholder={patientObject?.name}
+              id="standard-read-only-input"
+              variant="outlined"
+              onChange={(e) => {
+                this.setState({ name: e.target.value });
               }}
             />
             <br />
@@ -90,14 +110,29 @@ export default class PatProfile extends React.Component {
             <textarea
               style={{
                 width: "60vh",
-                height: "35vh",
+                height: "25vh",
                 resize: "none",
                 textAlign: "left",
                 borderColor: "lightblue",
               }}
+              onChange={(e) => {
+                this.setState({ bio: e.target.value });
+              }}
             >
-              BRU
+              {patientObject?.bio}
             </textarea>
+            <div
+              className="button_cont"
+              align="center"
+              style={{ marginTop: 10 }}
+              onClick={() => {
+                this.updateRecord();
+              }}
+            >
+              <a className="example_e" rel="nofollow noopener">
+                <strong>UPDATE</strong>
+              </a>
+            </div>
             <br />
           </div>
 
